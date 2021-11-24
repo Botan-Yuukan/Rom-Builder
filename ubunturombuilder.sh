@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#ubuntu
 # Info
 echo
 echo Welcome to the Rom Builder.
@@ -99,11 +100,15 @@ echo 8. "Flash the ROM from wherever its located in your internal storage/USB/Mi
 echo
 echo How to root your phone:
 echo
-echo ...
+echo 1. "Download magisk"
+echo 2. "Download twrp"
+echo 3. "flash twrp"
+echo 4. "flash magisk"
+echo 5. "Boot into your phone and you should find a app called magisk and install it"
 echo
 echo How to update your builds:
 echo
-echo ...
+echo 1.
 echo
 echo How to become a maintainer:
 echo
@@ -132,7 +137,7 @@ echo "Please provide your devices proprietary blobs: "
 echo
 read devicepropietaryblobs
 echo
-echo "Please select build type (usally vanilla/gapps):"
+echo "Please select build type (vanilla/gapps/custom if rom supports it):"
 echo
 read buildtype
 echo
@@ -143,6 +148,7 @@ echo
 echo "Would you like to sign your ROM (Y/N)?: "
 echo
 read signrom
+echo "What would you like to name this file?: "
 echo
 echo Installing required packages for the android build enviornment.
 echo Installing Android/device repos.
@@ -152,6 +158,7 @@ echo
 read processcount
 echo
 echo "Starting build for ${codename}: "
+echo "Please be pacient this prosses can take a while"
 sleep 3
 # add install script here
 echo
@@ -161,4 +168,5 @@ echo
 echo Ending Info:
 echo
 echo I hope this script has been helpful to make your custom rom.
-echo Have fun testing out the rom you just created!
+echo Have fun testing out the rom you just created! :3
+exit 0
